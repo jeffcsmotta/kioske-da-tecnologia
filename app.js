@@ -70,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 *Nome:* ${name}
 *WhatsApp:* ${whatsapp}
 *Aparelho:* ${brand} ${model}
-*Problema:* ${selectedDefect}`;
+*Problema:* ${selectedDefect}
+
+_Enviado pelo site da Kioske da Tecnologia_`;
 
         // Create the official WhatsApp URL
         const whatsappUrl = `https://wa.me/${businessPhone}?text=${encodeURIComponent(textMessage)}`;
