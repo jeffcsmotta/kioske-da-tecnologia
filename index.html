@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kioske da Tecnologia | Assistência Técnica de Celulares em Caxias do Sul</title>
-    <meta name="description" content="Conserto rápido de celulares, troca de tela, bateria nova, teclados, fones, cabos e acessórios em Caxias do Sul. Peça seu orçamento gratuito em 2 minutos!">
+    <title>Kioske da Tecnologia | Assistência Técnica & Acessórios em Caxias do Sul</title>
+    <meta name="description" content="Conserto rápido de celulares, troca de tela, bateria nova, micro-soldagem de placa e acessórios premium em Caxias do Sul - RS. Peça sua avaliação gratuita!">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,52 +14,39 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23020813'/%3E%3Cpath d='M30,30 L50,50 L30,70 M70,30 L50,50 L70,70' stroke='%2300d2ff' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Official Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo_symbol.svg">
+    <link rel="apple-touch-icon" href="assets/logo_kioske.png">
 </head>
 <body>
 
     <!-- Header Navigation -->
-    <header class="main-header">
+    <header class="main-header" id="mainHeader">
         <div class="container header-container">
-            <div class="logo-wrapper">
-                <!-- Inline SVG Logo of Kioske da Tecnologia -->
-                <svg class="brand-logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#00d2ff" />
-                            <stop offset="100%" stop-color="#0066ff" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Outer Diamond -->
-                    <rect x="30" y="30" width="60" height="60" rx="10" transform="rotate(45 60 60)" fill="none" stroke="url(#logoGrad)" stroke-width="4" />
-                    <!-- Nested Diamond 2 -->
-                    <rect x="40" y="40" width="40" height="40" rx="6" transform="rotate(45 60 60)" fill="none" stroke="url(#logoGrad)" stroke-width="3" />
-                    <!-- Inner Tech Core -->
-                    <rect x="50" y="50" width="20" height="20" rx="3" transform="rotate(45 60 60)" fill="url(#logoGrad)" />
-                </svg>
+            <a href="#" class="logo-wrapper" aria-label="Kioske da Tecnologia">
+                <img src="assets/logo_symbol.svg" alt="Símbolo Kioske da Tecnologia" class="brand-logo-img" width="52" height="42">
                 <div class="logo-text">
                     <span class="logo-title">KIOSKE</span>
                     <span class="logo-subtitle">DA TECNOLOGIA</span>
                 </div>
-            </div>
+            </a>
             
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navegação Principal">
                 <a href="#servicos">Serviços</a>
-                <a href="#diferenciais">Como Funciona</a>
+                <a href="#diferenciais">Diferenciais</a>
                 <a href="#localizacao">Onde Estamos</a>
             </nav>
             
-            <a href="https://wa.me/555491450742" target="_blank" class="btn-whatsapp-header">
-                <svg class="icon-whatsapp" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z" fill="currentColor"/>
+            <a href="https://wa.me/555491450742?text=Ol%C3%A1%20Kioske%20da%20Tecnologia!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+                <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z"/>
                 </svg>
-                <span>WhatsApp</span>
+                <span>Falar no WhatsApp</span>
             </a>
         </div>
     </header>
 
-    <!-- Hero Section with Background Video and Tech Aesthetic -->
+    <!-- Hero Section with Background Video & Light Laboratory Style -->
     <section class="hero-section">
         <!-- Background Video Container -->
         <div class="video-bg-container">
@@ -67,7 +54,6 @@
                 <source src="Mechanical_hand_soldering_microchip_202607201026.mp4" type="video/mp4">
             </video>
             <div class="video-overlay"></div>
-            <!-- Futuristic Grid overlay -->
             <div class="tech-grid-overlay"></div>
         </div>
 
@@ -77,9 +63,9 @@
                 <div class="badge-status-container">
                     <div class="badge-status">
                         <span class="status-dot"></span>
-                        <span>LABORATÓRIO ATIVO | Resposta imediata</span>
+                        <span>LABORATÓRIO ATIVO • Resposta Imediata</span>
                     </div>
-                    <span class="hud-latency">LATENCY: 12ms</span>
+                    <span class="hud-latency">DIAGNÓSTICO EXPRESS</span>
                 </div>
                 
                 <h1 class="hero-title">
@@ -88,69 +74,69 @@
                 </h1>
                 
                 <p class="hero-description">
-                    Consertos rápidos e precisos sob microscópio. Solucionamos falhas de placa, troca de telas e baterias no mesmo dia. Amplo estoque de fones, teclados, cabos reforçados e periféricos premium.
+                    Consertos rápidos e precisos sob microscópio. Solucionamos falhas de placa, troca de telas e baterias no mesmo dia. Amplo estoque de fones, cabos reforçados e periféricos premium no Panazzolo.
                 </p>
                 
-                <!-- Advanced Tech Telemetry (Stats) -->
+                <!-- Telemetry Stats -->
                 <div class="telemetry-grid">
                     <div class="telemetry-card">
                         <span class="telemetry-value">98.4%</span>
-                        <span class="telemetry-label">EFICIÊNCIA DE REPAROS</span>
+                        <span class="telemetry-label">Eficiência de Reparos</span>
                         <div class="tech-progress-bar"><span style="width: 98.4%;"></span></div>
                     </div>
                     <div class="telemetry-card">
                         <span class="telemetry-value">&lt; 40 min</span>
-                        <span class="telemetry-label">TEMPO MÉDIO DE TROCA</span>
-                        <div class="tech-progress-bar"><span style="width: 90%;"></span></div>
+                        <span class="telemetry-label">Tempo Médio de Troca</span>
+                        <div class="tech-progress-bar"><span style="width: 85%;"></span></div>
                     </div>
                     <div class="telemetry-card">
                         <span class="telemetry-value">100%</span>
-                        <span class="telemetry-label">PEÇAS HOMOLOGADAS</span>
+                        <span class="telemetry-label">Peças Homologadas</span>
                         <div class="tech-progress-bar"><span style="width: 100%;"></span></div>
                     </div>
                 </div>
 
                 <div class="hero-features">
                     <div class="feature-item">
-                        <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
                         </svg>
-                        <span>Micro-soldagem Avançada</span>
+                        <span>Micro-soldagem Especializada</span>
                     </div>
                     <div class="feature-item">
-                        <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
                         </svg>
                         <span>Garantia de 90 dias inclusa</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Right Form Column (Asymmetric Floating Card) -->
+            <!-- Right Form Column (Interactive Free Estimate) -->
             <div class="hero-form-card" id="orcamento">
                 <div class="form-header">
                     <h2>Solicitar Avaliação</h2>
                     <span class="form-badge">ORÇAMENTO GRÁTIS</span>
                 </div>
-                <p class="form-subtitle">Informe o defeito abaixo para estimativa de valor em tempo real.</p>
+                <p class="form-subtitle">Informe os dados do aparelho para receber a estimativa em tempo real.</p>
                 
                 <form id="evaluationForm" class="orcamento-form">
                     <div class="form-group">
-                        <label for="clientName">SEU NOME</label>
-                        <input type="text" id="clientName" placeholder="Ex.: Rodrigo Silva" required>
+                        <label for="clientName">Seu Nome</label>
+                        <input type="text" id="clientName" placeholder="Ex.: Rodrigo Silva" required autocomplete="name">
                     </div>
                     
                     <div class="form-group">
-                        <label for="clientWhatsapp">SEU WHATSAPP</label>
-                        <input type="text" id="clientWhatsapp" placeholder="(54) 99145-0742" required>
+                        <label for="clientWhatsapp">Seu WhatsApp</label>
+                        <input type="tel" id="clientWhatsapp" placeholder="(54) 99999-9999" required autocomplete="tel">
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group col-6">
-                            <label for="deviceBrand">MARCA</label>
+                            <label for="deviceBrand">Marca</label>
                             <select id="deviceBrand" required>
                                 <option value="" disabled selected>Selecione</option>
-                                <option value="Apple">Apple</option>
+                                <option value="Apple">Apple (iPhone)</option>
                                 <option value="Samsung">Samsung</option>
                                 <option value="Xiaomi">Xiaomi</option>
                                 <option value="Motorola">Motorola</option>
@@ -160,13 +146,13 @@
                             </select>
                         </div>
                         <div class="form-group col-6">
-                            <label for="deviceModel">MODELO</label>
+                            <label for="deviceModel">Modelo</label>
                             <input type="text" id="deviceModel" placeholder="Ex.: iPhone 13 Pro" required>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label>SELECIONE O DEFEITO PRINCIPAL</label>
+                        <label>O que aconteceu com o aparelho?</label>
                         <div class="defect-options">
                             <button type="button" class="defect-btn" data-value="Tela Trincada / Display Quebrado">Tela trincada</button>
                             <button type="button" class="defect-btn" data-value="Troca de Bateria / Sem Saúde">Bateria fraca</button>
@@ -178,8 +164,8 @@
                     </div>
                     
                     <button type="submit" class="btn-submit-whatsapp">
-                        <svg class="icon-whatsapp" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z" fill="currentColor"/>
+                        <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z"/>
                         </svg>
                         <span>Falar com Técnico no WhatsApp</span>
                     </button>
@@ -188,43 +174,41 @@
         </div>
     </section>
 
-    <!-- Brands Sliding Ticker (Horizontal with REAL SVG LOGOS) -->
-    <div class="brands-ticker-section">
+    <!-- Brands Sliding Ticker -->
+    <div class="brands-ticker-section" id="diferenciais">
         <div class="ticker-header">
-            <span>DISPOSITIVOS SUPORTADOS</span>
+            <span>DISPOSITIVOS & MARCAS ATENDIDAS</span>
         </div>
         <div class="ticker-container">
             <div class="ticker-track">
-                <!-- Ticker items with real SVG Logos (Repeated for seamless loop) -->
-                
                 <!-- Apple -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Apple">
                     <svg viewBox="0 0 170 170" fill="currentColor" class="brand-logo-svg-ticker">
                         <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.34.13-9.13-1.92-14.35-6.15-2.88-2.38-6.68-6.9-11.39-13.56-6.21-9-11.23-19.4-15.06-31.21-3.83-11.81-5.75-23.23-5.75-34.27 0-16.14 4.02-29.23 12.06-39.28 8.04-10.05 18.01-15.19 29.9-15.44 5.37.12 11.23 1.7 17.59 4.73 6.35 3.03 10.51 4.54 12.47 4.54 1.7 0 5.48-1.39 11.34-4.17 5.86-2.78 11.42-4.09 16.68-3.92 12.27.5 22.02 5.13 29.27 13.88 4.95 6.02 8.5 13.12 10.66 21.3-15.11 6.13-22.56 16.03-22.31 29.69.25 10.02 3.92 18.25 11 24.67 7.08 6.42 15.42 9.94 25.02 10.56-2.25 7.2-5.42 14.41-9.5 21.62zM119.22 35.24c0-7.72 2.76-14.88 8.28-21.49 6.55-7.71 14.66-11.75 24.31-12.13.13.99.2 1.85.2 2.58 0 7.59-2.86 14.8-8.58 21.63-3.23 3.86-7.14 7.02-11.74 9.47-4.6 2.45-9.3 3.73-14.1 3.84-.25-1.29-.37-2.59-.37-3.92z"/>
                     </svg>
                 </div>
                 <!-- Samsung -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Samsung">
                     <svg viewBox="0 0 500 100" fill="currentColor" class="brand-logo-svg-ticker-wide">
                         <path d="M53.4 46c0-9.8-12.3-11.4-18.4-13.6-6-2.2-9-3.9-9-6.3 0-2.8 4.4-4 8.7-4 7.7 0 16.5 3.1 19.3 4.8l3.6-11c-4.9-2.7-14.3-4.8-23-4.8-15.5 0-23.7 7.5-23.7 16.4 0 11.1 14.5 12.8 20.3 14.8 6.6 2.3 8.3 4.2 8.3 6.9 0 3.3-5 4.3-10.1 4.3-9.5 0-20.2-4.1-23.7-6.5l-3.3 11c5.2 3.5 17.5 6.4 27.2 6.4 16.7.1 23.8-7.7 23.8-17.9M98.2 12.3H84.1L64.5 67h13.9l4.1-12.2h21.4L108 67h13.8L102.3 12.3H98.2zm-12.6 32.8l7.6-22.9 7.6 22.9H85.6zM182.2 12.3h-12.6l-13 36.6-13-36.6h-12.6V67h12V25.2L154.5 59h7.4l11.5-33.8V67h12.1l-.3-54.7zM229.4 46c0-9.8-12.3-11.4-18.4-13.6-6-2.2-9-3.9-9-6.3 0-2.8 4.4-4 8.7-4 7.7 0 16.5 3.1 19.3 4.8l3.6-11c-4.9-2.7-14.3-4.8-23-4.8-15.5 0-23.7 7.5-23.7 16.4 0 11.1 14.5 12.8 20.3 14.8 6.6 2.3 8.3 4.2 8.3 6.9 0 3.3-5 4.3-10.1 4.3-9.5 0-20.2-4.1-23.7-6.5l-3.3 11c5.2 3.5 17.5 6.4 27.2 6.4 16.7.1 23.8-7.7 23.8-17.9M283.4 12.3h-12.1v34c0 7.2-4.1 10.3-9.8 10.3-5.6 0-9.8-3.1-9.8-10.3v-34h-12.1v34.8c0 13.8 8.6 21.2 21.9 21.2 13.4 0 21.9-7.4 21.9-21.2v-34.8zM342.2 12.3h-12.6l-26 36.6V12.3H292V67h12.6l26-36.6V67h11.6V12.3zM375.4 39.4c0-16.7 10.6-28.1 26.2-28.1 9.4 0 17 4.2 20.8 7.8l-7.3 9.4c-3.1-2.6-8-5.1-13-5.1-8.5 0-14.3 6.2-14.3 15.9 0 9.7 5.8 15.9 14.3 15.9 5.3 0 10.9-2.9 13.9-6v-6.7h-12.8V33.9h24.7v24.7c-6.8 5.7-16.9 9.4-26.2 9.4-15.7-.1-26.2-11.8-26.2-28.6z"/>
                     </svg>
                 </div>
                 <!-- Xiaomi -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Xiaomi">
                     <svg viewBox="0 0 100 100" fill="currentColor" class="brand-logo-svg-ticker-medium">
-                        <rect width="100" height="100" rx="25" fill="#FF6700" />
+                        <rect width="100" height="100" rx="22" fill="#FF6700" />
                         <path d="M28 35v30h7V42c0-3.3 2.7-6 6-6s6 2.7 6 6v23h7V42c0-3.3 2.7-6 6-6s6 2.7 6 6v23h7V42c0-7.2-5.8-13-13-13c-4.9 0-9.1 2.7-11.3 6.7C44.1 31.7 39.9 29 35 29c-7.2 0-13 5.8-13 13v23h6V35z" fill="#FFF"/>
                     </svg>
                 </div>
                 <!-- Motorola -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Motorola">
                     <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" class="brand-logo-svg-ticker-medium">
                         <circle cx="50" cy="50" r="46" fill="none" stroke-width="4"/>
                         <path d="M28 68 L40 32 L50 48 L60 32 L72 68 L60 68 L53 48 L50 56 L47 48 L40 68 Z" fill="currentColor"/>
                     </svg>
                 </div>
                 <!-- Google -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Google Pixel">
                     <svg viewBox="0 0 24 24" fill="currentColor" class="brand-logo-svg-ticker-medium">
                         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                         <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -233,7 +217,7 @@
                     </svg>
                 </div>
                 <!-- LG -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="LG">
                     <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" class="brand-logo-svg-ticker-medium">
                         <circle cx="50" cy="50" r="46" stroke-width="4"/>
                         <path d="M50 20 A30 30 0 1 0 80 50 A30 30 0 0 0 50 20 Z" stroke-width="4"/>
@@ -241,51 +225,22 @@
                         <circle cx="40" cy="45" r="4" fill="currentColor"/>
                     </svg>
                 </div>
-                
+
                 <!-- REPEAT FOR INFINITE LOOP -->
-                
-                <!-- Apple -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Apple">
                     <svg viewBox="0 0 170 170" fill="currentColor" class="brand-logo-svg-ticker">
                         <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.34.13-9.13-1.92-14.35-6.15-2.88-2.38-6.68-6.9-11.39-13.56-6.21-9-11.23-19.4-15.06-31.21-3.83-11.81-5.75-23.23-5.75-34.27 0-16.14 4.02-29.23 12.06-39.28 8.04-10.05 18.01-15.19 29.9-15.44 5.37.12 11.23 1.7 17.59 4.73 6.35 3.03 10.51 4.54 12.47 4.54 1.7 0 5.48-1.39 11.34-4.17 5.86-2.78 11.42-4.09 16.68-3.92 12.27.5 22.02 5.13 29.27 13.88 4.95 6.02 8.5 13.12 10.66 21.3-15.11 6.13-22.56 16.03-22.31 29.69.25 10.02 3.92 18.25 11 24.67 7.08 6.42 15.42 9.94 25.02 10.56-2.25 7.2-5.42 14.41-9.5 21.62zM119.22 35.24c0-7.72 2.76-14.88 8.28-21.49 6.55-7.71 14.66-11.75 24.31-12.13.13.99.2 1.85.2 2.58 0 7.59-2.86 14.8-8.58 21.63-3.23 3.86-7.14 7.02-11.74 9.47-4.6 2.45-9.3 3.73-14.1 3.84-.25-1.29-.37-2.59-.37-3.92z"/>
                     </svg>
                 </div>
-                <!-- Samsung -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Samsung">
                     <svg viewBox="0 0 500 100" fill="currentColor" class="brand-logo-svg-ticker-wide">
                         <path d="M53.4 46c0-9.8-12.3-11.4-18.4-13.6-6-2.2-9-3.9-9-6.3 0-2.8 4.4-4 8.7-4 7.7 0 16.5 3.1 19.3 4.8l3.6-11c-4.9-2.7-14.3-4.8-23-4.8-15.5 0-23.7 7.5-23.7 16.4 0 11.1 14.5 12.8 20.3 14.8 6.6 2.3 8.3 4.2 8.3 6.9 0 3.3-5 4.3-10.1 4.3-9.5 0-20.2-4.1-23.7-6.5l-3.3 11c5.2 3.5 17.5 6.4 27.2 6.4 16.7.1 23.8-7.7 23.8-17.9M98.2 12.3H84.1L64.5 67h13.9l4.1-12.2h21.4L108 67h13.8L102.3 12.3H98.2zm-12.6 32.8l7.6-22.9 7.6 22.9H85.6zM182.2 12.3h-12.6l-13 36.6-13-36.6h-12.6V67h12V25.2L154.5 59h7.4l11.5-33.8V67h12.1l-.3-54.7zM229.4 46c0-9.8-12.3-11.4-18.4-13.6-6-2.2-9-3.9-9-6.3 0-2.8 4.4-4 8.7-4 7.7 0 16.5 3.1 19.3 4.8l3.6-11c-4.9-2.7-14.3-4.8-23-4.8-15.5 0-23.7 7.5-23.7 16.4 0 11.1 14.5 12.8 20.3 14.8 6.6 2.3 8.3 4.2 8.3 6.9 0 3.3-5 4.3-10.1 4.3-9.5 0-20.2-4.1-23.7-6.5l-3.3 11c5.2 3.5 17.5 6.4 27.2 6.4 16.7.1 23.8-7.7 23.8-17.9M283.4 12.3h-12.1v34c0 7.2-4.1 10.3-9.8 10.3-5.6 0-9.8-3.1-9.8-10.3v-34h-12.1v34.8c0 13.8 8.6 21.2 21.9 21.2 13.4 0 21.9-7.4 21.9-21.2v-34.8zM342.2 12.3h-12.6l-26 36.6V12.3H292V67h12.6l26-36.6V67h11.6V12.3zM375.4 39.4c0-16.7 10.6-28.1 26.2-28.1 9.4 0 17 4.2 20.8 7.8l-7.3 9.4c-3.1-2.6-8-5.1-13-5.1-8.5 0-14.3 6.2-14.3 15.9 0 9.7 5.8 15.9 14.3 15.9 5.3 0 10.9-2.9 13.9-6v-6.7h-12.8V33.9h24.7v24.7c-6.8 5.7-16.9 9.4-26.2 9.4-15.7-.1-26.2-11.8-26.2-28.6z"/>
                     </svg>
                 </div>
-                <!-- Xiaomi -->
-                <div class="ticker-item">
+                <div class="ticker-item" title="Xiaomi">
                     <svg viewBox="0 0 100 100" fill="currentColor" class="brand-logo-svg-ticker-medium">
-                        <rect width="100" height="100" rx="25" fill="#FF6700" />
+                        <rect width="100" height="100" rx="22" fill="#FF6700" />
                         <path d="M28 35v30h7V42c0-3.3 2.7-6 6-6s6 2.7 6 6v23h7V42c0-3.3 2.7-6 6-6s6 2.7 6 6v23h7V42c0-7.2-5.8-13-13-13c-4.9 0-9.1 2.7-11.3 6.7C44.1 31.7 39.9 29 35 29c-7.2 0-13 5.8-13 13v23h6V35z" fill="#FFF"/>
-                    </svg>
-                </div>
-                <!-- Motorola -->
-                <div class="ticker-item">
-                    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" class="brand-logo-svg-ticker-medium">
-                        <circle cx="50" cy="50" r="46" fill="none" stroke-width="4"/>
-                        <path d="M28 68 L40 32 L50 48 L60 32 L72 68 L60 68 L53 48 L50 56 L47 48 L40 68 Z" fill="currentColor"/>
-                    </svg>
-                </div>
-                <!-- Google -->
-                <div class="ticker-item">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="brand-logo-svg-ticker-medium">
-                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l3.66-2.85z" fill="#FBBC05"/>
-                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
-                    </svg>
-                </div>
-                <!-- LG -->
-                <div class="ticker-item">
-                    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" class="brand-logo-svg-ticker-medium">
-                        <circle cx="50" cy="50" r="46" stroke-width="4"/>
-                        <path d="M50 20 A30 30 0 1 0 80 50 A30 30 0 0 0 50 20 Z" stroke-width="4"/>
-                        <path d="M50 35 L50 65 L70 65" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="40" cy="45" r="4" fill="currentColor"/>
                     </svg>
                 </div>
             </div>
@@ -296,7 +251,7 @@
     <section class="services-section" id="servicos">
         <div class="container">
             <div class="section-title-wrapper">
-                <span class="section-tagline">NOSSAS SOLUÇÕES</span>
+                <span class="section-tagline">Nossas Soluções</span>
                 <h2 class="section-title">O que fazemos por você e seu aparelho</h2>
             </div>
             
@@ -304,24 +259,22 @@
                 <!-- Card 1: Troca de Tela -->
                 <div class="service-card">
                     <div class="service-icon-wrapper">
-                        <!-- Icon Screen Replacement -->
-                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="5" y="2" width="14" height="20" rx="2" />
-                            <path d="M12 18h.01" />
-                            <path d="M5 6h14" />
-                            <path d="M5 15h14" />
+                            <line x1="12" y1="18" x2="12.01" y2="18" />
+                            <line x1="5" y1="6" x2="19" y2="6" />
+                            <line x1="5" y1="15" x2="19" y2="15" />
                         </svg>
                     </div>
                     <h3>Troca de Tela</h3>
                     <p>Substituição de displays danificados ou trincados com peças de excelente calibração de cor, brilho e touch 100% responsivo.</p>
-                    <span class="card-action">Orçamento Rápido &rarr;</span>
+                    <a href="#orcamento" class="card-action">Orçamento Rápido &rarr;</a>
                 </div>
                 
                 <!-- Card 2: Bateria Nova -->
                 <div class="service-card">
                     <div class="service-icon-wrapper">
-                        <!-- Icon Battery -->
-                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="7" width="16" height="10" rx="2" transform="rotate(-90 10 12)"/>
                             <line x1="11" y1="4" x2="13" y2="4" />
                             <path d="M8 11h4M10 9v4" />
@@ -329,34 +282,32 @@
                     </div>
                     <h3>Bateria Nova</h3>
                     <p>Seu celular desligando do nada ou sem carga? Trocamos sua bateria antiga por uma nova com saúde e ciclo em 100%.</p>
-                    <span class="card-action">Orçamento Rápido &rarr;</span>
+                    <a href="#orcamento" class="card-action">Orçamento Rápido &rarr;</a>
                 </div>
                 
-                <!-- Card 3: Reparos Rápidos -->
+                <!-- Card 3: Reparos de Placa / Micro-solda -->
                 <div class="service-card">
                     <div class="service-icon-wrapper">
-                        <!-- Icon Quick Fix -->
-                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                         </svg>
                     </div>
-                    <h3>Consertos Gerais</h3>
-                    <p>Problemas com conector de carga, microfone, botões quebrados ou câmera embaçada? Resolvemos a grande maioria na hora.</p>
-                    <span class="card-action">Orçamento Rápido &rarr;</span>
+                    <h3>Micro-solda & Placa</h3>
+                    <p>Problemas com conector de carga, circuitos integrados, botões quebrados ou câmera? Soluções precisas sob microscópio.</p>
+                    <a href="#orcamento" class="card-action">Orçamento Rápido &rarr;</a>
                 </div>
                 
                 <!-- Card 4: Acessórios Premium -->
                 <div class="service-card">
                     <div class="service-icon-wrapper">
-                        <!-- Icon Accessories -->
-                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
                             <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
                         </svg>
                     </div>
                     <h3>Acessórios Premium</h3>
-                    <p>Ampla variedade de produtos em estoque: cabos reforçados, fones de ouvido de alta fidelidade, teclados, películas e carregadores.</p>
-                    <span class="card-action">Conhecer Produtos &rarr;</span>
+                    <p>Ampla variedade de produtos em estoque: cabos reforçados, fones de alta fidelidade, teclados, películas e carregadores turbo.</p>
+                    <a href="#orcamento" class="card-action">Conhecer Produtos &rarr;</a>
                 </div>
             </div>
         </div>
@@ -366,15 +317,15 @@
     <section class="location-section" id="localizacao">
         <div class="container location-container">
             <div class="location-info">
-                <span class="section-tagline">ONDE ESTAMOS</span>
+                <span class="section-tagline">Onde Estamos</span>
                 <h2 class="location-title">Kioske de fácil acesso no Panazzolo</h2>
                 <p class="location-desc">
-                    Venha nos visitar para uma avaliação presencial ou para comprar seus acessórios com facilidade de estacionamento e atendimento ágil. Clique no mapa ao lado para abrir a rota direto no Google Maps do seu celular.
+                    Venha nos visitar para uma avaliação presencial ou para comprar seus acessórios com facilidade de estacionamento e atendimento ágil. Toque no mapa para abrir a rota direto no Google Maps.
                 </p>
                 
                 <div class="contact-details">
                     <div class="contact-item">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
@@ -385,7 +336,7 @@
                     </div>
                     
                     <div class="contact-item">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10" />
                             <polyline points="12 6 12 12 16 14" />
                         </svg>
@@ -397,22 +348,21 @@
                 </div>
             </div>
             
-            <!-- Real Google Maps Image Container with direct mobile navigation link -->
-            <a href="https://maps.google.com/?q=Rua+Luiz+Antunes,+495+-+Panazzolo,+Caxias+do+Sul+-+RS" target="_blank" class="simulated-map-card-link">
+            <!-- Real Google Maps Card Link -->
+            <a href="https://maps.google.com/?q=Rua+Luiz+Antunes,+495+-+Panazzolo,+Caxias+do+Sul+-+RS" target="_blank" rel="noopener noreferrer" class="simulated-map-card-link" aria-label="Abrir localização no Google Maps">
                 <div class="simulated-map-card">
                     <div class="map-header">
                         <span class="map-indicator"></span>
                         <span>TOQUE PARA ABRIR NO GOOGLE MAPS</span>
                     </div>
                     <div class="map-graphic-wrapper">
-                        <!-- Loaded map image with a subtle dark overlay & glow pin -->
-                        <img src="mapa.png" alt="Mapa do Endereço Kioske da Tecnologia" class="map-screenshot-img">
+                        <img src="mapa.png" alt="Mapa do Endereço Kioske da Tecnologia" class="map-screenshot-img" width="600" height="260">
                         <div class="map-hover-overlay">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="map-overlay-icon">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
-                            <span>Clique para traçar rota</span>
+                            <span>Clique para traçar rota no GPS</span>
                         </div>
                     </div>
                     <div class="map-footer">
@@ -431,38 +381,51 @@
 
     <!-- Footer -->
     <footer class="main-footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <div class="logo-wrapper">
-                    <!-- Mini Logo -->
-                    <svg class="brand-logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
-                        <rect x="30" y="30" width="60" height="60" rx="10" transform="rotate(45 60 60)" fill="none" stroke="#00d2ff" stroke-width="6" />
-                        <rect x="50" y="50" width="20" height="20" rx="3" transform="rotate(45 60 60)" fill="#00d2ff" />
-                    </svg>
-                    <div class="logo-text">
-                        <span class="logo-title font-small">KIOSKE</span>
-                        <span class="logo-subtitle font-xsmall">DA TECNOLOGIA</span>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="logo-wrapper">
+                        <img src="assets/logo_symbol.svg" alt="Kioske da Tecnologia" class="brand-logo-img" width="44" height="36">
+                        <div class="logo-text">
+                            <span class="logo-title">KIOSKE</span>
+                            <span class="logo-subtitle">DA TECNOLOGIA</span>
+                        </div>
                     </div>
+                    <p>&copy; 2026 Kioske da Tecnologia. Todos os direitos reservados.</p>
                 </div>
-                <p>&copy; 2026 Kioske da Tecnologia. Todos os direitos reservados.</p>
+                
+                <div class="footer-contact">
+                    <p>WhatsApp: <strong>(54) 9145-0742</strong></p>
+                    <p>Rua Luiz Antunes, 495 • Panazzolo • Caxias do Sul - RS</p>
+                </div>
             </div>
             
-            <div class="footer-contact">
-                <p>Telefone: <strong>(54) 9145-0742</strong></p>
-                <p>Caxias do Sul - RS</p>
+            <div class="footer-signature">
+                <span>Canal Oficial de Atendimento & Diagnóstico Digital</span>
+                <span>Desenvolvido por <a href="https://jeffmotta.framer.website" target="_blank" rel="noopener noreferrer" class="footer-onira-link">Onira Labs</a></span>
             </div>
         </div>
     </footer>
 
-    <!-- Always On Top Floating WhatsApp Button (Pulsing Green Logo Always Visible) -->
+    <!-- Always On Top Floating WhatsApp Button -->
     <div class="whatsapp-floating-widget" id="whatsappFloating">
-        <a href="https://wa.me/555491450742" target="_blank" class="whatsapp-link" aria-label="Falar conosco no WhatsApp">
+        <a href="https://wa.me/555491450742?text=Ol%C3%A1%20Kioske%20da%20Tecnologia!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="whatsapp-link" aria-label="Falar conosco no WhatsApp">
             <div class="online-indicator"></div>
             <div class="whatsapp-tooltip">Falar no WhatsApp</div>
-            <svg class="icon-whatsapp-float" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z" fill="#FFF"/>
+            <svg class="icon-whatsapp-float" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.41 9.86-9.847.002-2.63-1.02-5.101-2.877-6.958C16.598 1.982 14.126.962 11.997.962c-5.441 0-9.864 4.412-9.867 9.851 0 1.706.46 3.376 1.332 4.832L2.43 21.07l4.217-1.916z"/>
             </svg>
         </a>
+    </div>
+
+    <!-- Floating Onira Labs CTA Standard (.onira-cta) -->
+    <div class="onira-cta" id="oniraCta">
+        <img src="assets/jeff-avatar.webp" alt="Jefferson Motta" class="onira-cta-avatar" width="42" height="42">
+        <a href="https://jeffmotta.framer.website" target="_blank" rel="noopener noreferrer" class="onira-cta-content">
+            <span class="onira-cta-hook">Gostou deste site?</span>
+            <span class="onira-cta-title">Conheça o estúdio Onira Labs</span>
+        </a>
+        <button class="onira-cta-close" id="oniraCtaClose" aria-label="Fechar">&times;</button>
     </div>
 
     <!-- Script file -->
