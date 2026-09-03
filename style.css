@@ -645,19 +645,19 @@ img, svg {
     background-color: #FFFFFF;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
-    padding: 24px 0;
+    padding: 32px 0 36px;
     overflow: hidden;
 }
 
 .ticker-header {
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 22px;
 }
 
 .ticker-header span {
-    font-size: 0.74rem;
+    font-size: 0.78rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 2.2px;
     color: var(--color-text-muted);
     text-transform: uppercase;
 }
@@ -674,28 +674,32 @@ img, svg {
     content: '';
     position: absolute;
     top: 0;
-    width: 100px;
+    width: 120px;
     height: 100%;
-    z-index: 2;
+    z-index: 5;
     pointer-events: none;
 }
 
 .ticker-container::before {
     left: 0;
-    background: linear-gradient(to right, #FFFFFF, transparent);
+    background: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0));
 }
 
 .ticker-container::after {
     right: 0;
-    background: linear-gradient(to left, #FFFFFF, transparent);
+    background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
 }
 
 .ticker-track {
     display: flex;
     align-items: center;
-    gap: 54px;
-    animation: tickerSlide 30s linear infinite;
+    gap: 18px;
+    animation: tickerSlide 40s linear infinite;
     width: max-content;
+}
+
+.ticker-track:hover {
+    animation-play-state: paused;
 }
 
 @keyframes tickerSlide {
@@ -703,34 +707,43 @@ img, svg {
     100% { transform: translateX(-50%); }
 }
 
-.ticker-item {
-    display: flex;
+/* Standardized Brand Card Badge */
+.brand-card-badge {
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 56px;
+    min-width: 130px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #64748B;
-    opacity: 0.75;
-    transition: var(--transition-fast);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    transition: var(--transition-smooth);
+    color: #475569;
+    flex-shrink: 0;
+    cursor: default;
+    user-select: none;
 }
 
-.ticker-item:hover {
+.brand-card-badge:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
     color: var(--color-text-title);
-    opacity: 1;
-    transform: scale(1.08);
 }
 
-.brand-logo-svg-ticker {
-    height: 32px;
+.brand-card-svg {
+    height: 24px;
     width: auto;
+    max-width: 130px;
+    object-fit: contain;
+    display: block;
+    transition: transform var(--transition-fast);
 }
 
-.brand-logo-svg-ticker-wide {
-    height: 20px;
-    width: auto;
-}
-
-.brand-logo-svg-ticker-medium {
-    height: 28px;
-    width: auto;
+.brand-card-badge:hover .brand-card-svg {
+    transform: scale(1.04);
 }
 
 /* ---------------------------------- */

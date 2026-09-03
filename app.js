@@ -95,37 +95,4 @@ _Enviado pelo site oficial da Kioske da Tecnologia_`;
         window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
     }
-
-    // -------------------------------------------------------------
-    // 5. Floating Onira CTA Widget
-    // -------------------------------------------------------------
-    const oniraCta = document.getElementById('oniraCta');
-    const oniraCtaClose = document.getElementById('oniraCtaClose');
-    
-    if (oniraCta && oniraCtaClose) {
-        const isDismissed = localStorage.getItem('kioske_cta_onira') === 'dispensado';
-        
-        if (!isDismissed) {
-            let shown = false;
-            const showCta = () => {
-                if (!shown && !localStorage.getItem('kioske_cta_onira')) {
-                    shown = true;
-                    oniraCta.classList.add('active');
-                }
-            };
-
-            // Trigger on scroll or after 4s
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 250) showCta();
-            }, { passive: true });
-
-            setTimeout(showCta, 4000);
-        }
-
-        oniraCtaClose.addEventListener('click', (e) => {
-            e.stopPropagation();
-            oniraCta.classList.remove('active');
-            localStorage.setItem('kioske_cta_onira', 'dispensado');
-        });
-    }
 });
